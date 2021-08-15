@@ -10,6 +10,19 @@ at: [www.homebrew8088.com](https://www.homebrew8088.com)
 ### TODOs:    
 - Move from WiringPI to [pigpio](http://www.abyz.me.uk/rpi/pigpio/pigs.html)
 
+### How to build
+
+create a build directory:
+
+```sh
+mkdir -p build
+```
+
+run cmake and generate cmakefiles
+```sh
+cd ./build && cmake .. && make
+```
+
 ---
 2021 Gordon Young
 
