@@ -1,3 +1,0 @@
-/home/pi/src/pi86/build/CMakeFiles/rebuild_cache.dir
-/home/pi/src/pi86/build/CMakeFiles/pi86.dir
-/home/pi/src/pi86/build/CMakeFiles/edit_cache.dir
