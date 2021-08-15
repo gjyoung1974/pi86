@@ -1,4 +1,5 @@
 #include "x86.h"
+#include <pigpio.h>
 
 unsigned char RAM[0x100000];
 unsigned char IO[0x10000];

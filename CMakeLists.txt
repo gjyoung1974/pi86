@@ -14,8 +14,10 @@ add_executable(pi86 pi86.cpp x86.cpp vga.cpp font.h timer.cpp drives.cpp keycode
 find_package(SDL2 REQUIRED)
 find_package(Threads REQUIRED)
 find_library(WIRINGPI_LIBRARIES NAMES wiringPi)
+find_library(PIGPIO_LIBRARIES NAMES pigpio)
 
 # Link it
 target_link_libraries(pi86 ${WIRINGPI_LIBRARIES})
 target_link_libraries(pi86 ${CMAKE_THREAD_LIBS_INIT})
 target_link_libraries(pi86 ${SDL2_LIBRARIES} )
+target_link_libraries(pi86 ${PIGPIO_LIBRARIES} )

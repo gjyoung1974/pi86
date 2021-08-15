@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/pi86.dir/pi86.cpp.o CMakeFiles/pi86.dir/x86.cpp.o CMakeFiles/pi86.dir/vga.cpp.o CMakeFiles/pi86.dir/timer.cpp.o CMakeFiles/pi86.dir/drives.cpp.o  -o pi86  -Wl,-rpath,/usr/local/lib /usr/local/lib/libwiringPi.so -lpthread -lSDL2 /usr/lib/libpigpio.so 

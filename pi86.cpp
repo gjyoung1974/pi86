@@ -9,7 +9,8 @@
 #include "timer.h"
 #include "drives.h"
 #include "keycodes.h"
-
+#include <pigpio.h>
+#include <iostream>
 
 using namespace std;
 	
@@ -17,6 +18,9 @@ void keyboard();
 void Up_Date_Screen(SDL_Window *Window, SDL_Renderer *Renderer);
 
 int main(int argc, char* argv[]) {
+
+    gpioInitialise();
+
 	
 	SDL_Window *window;                    // Declare a pointer
 	SDL_Renderer *renderer = NULL;
