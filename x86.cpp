@@ -1,10 +1,13 @@
 #include "x86.h"
-#include <pigpio.h>
+
 
 unsigned char RAM[0x100000];
 unsigned char IO[0x10000];
 bool IRQ0_Flag = 0;
 bool IRQ1_Flag = 0;
+
+
+
 void IRQ0()
 {
    IRQ0_Flag = true;
@@ -219,6 +222,10 @@ void CLK()
 void Setup()
 {
    Stop_Flag = false;
+
+	//TODO: finish porting to pigpio
+   gpioInitialise();
+
    wiringPiSetup();
 
    pinMode (PIN_CLK, OUTPUT);

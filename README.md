@@ -9,6 +9,7 @@ at: [www.homebrew8088.com](https://www.homebrew8088.com)
 
 ### TODOs:    
 - Move from WiringPI to [pigpio](http://www.abyz.me.uk/rpi/pigpio/pigs.html)
+- or an ch341 SPI interface for the v1 circuit board model [ch341](https://github.com/gschorcht/spi-ch341-usb)
 
 ### How to build
 

@@ -38,6 +38,8 @@
 #define A19   5
 
 #include <wiringPi.h>
+#include <pigpio.h>
+
 #include <string>
 #include <thread>
 #include <unistd.h>
